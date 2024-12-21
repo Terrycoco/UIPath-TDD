@@ -78,13 +78,9 @@
       <AssemblyReference>System.Linq.Expressions</AssemblyReference>
     </sco:Collection>
   </TextExpression.ReferencesForImplementation>
-  <Sequence DisplayName="Main Sequence" sap:VirtualizedContainerService.HintSize="912.5714285714286,419.18285714285713" sap2010:WorkflowViewState.IdRef="Sequence_1">
+  <Sequence DisplayName="Main Sequence" sap:VirtualizedContainerService.HintSize="768.5714285714286,416.3257142857143" sap2010:WorkflowViewState.IdRef="Sequence_1">
     <Sequence.Variables>
-      <Variable x:TypeArguments="scg:Dictionary(x:String, x:String)" Name="dicConfig">
-        <Variable.Default>
-          <VisualBasicValue x:TypeArguments="scg:Dictionary(x:String, x:String)" ExpressionText="new Dictionary(Of  String, String)" />
-        </Variable.Default>
-      </Variable>
+      <Variable x:TypeArguments="scg:Dictionary(x:String, x:String)" Default="[new Dictionary(Of  String, String)]" Name="dicConfig" />
     </Sequence.Variables>
     <sap:WorkflowViewStateService.ViewState>
       <scg:Dictionary x:TypeArguments="x:String, x:Object">
@@ -92,6 +88,13 @@
       </scg:Dictionary>
     </sap:WorkflowViewStateService.ViewState>
     <Sequence sap:VirtualizedContainerService.HintSize="450.2857142857143,252.57142857142858" sap2010:WorkflowViewState.IdRef="Sequence_2">
+      <Sequence.Variables>
+        <Variable x:TypeArguments="x:String" Name="strConfigPath">
+          <Variable.Default>
+            <Literal x:TypeArguments="x:String">ProjectData/config.xlsx</Literal>
+          </Variable.Default>
+        </Variable>
+      </Sequence.Variables>
       <sap:WorkflowViewStateService.ViewState>
         <scg:Dictionary x:TypeArguments="x:String, x:Object">
           <x:Boolean x:Key="IsExpanded">True</x:Boolean>
@@ -100,6 +103,7 @@
       <ui:InvokeWorkflowFile ArgumentsVariable="{x:Null}" ContinueOnError="{x:Null}" DisplayName="Initialization - Invoke Workflow File (Init\Initialization.xaml)" sap:VirtualizedContainerService.HintSize="416,169.71428571428572" sap2010:WorkflowViewState.IdRef="InvokeWorkflowFile_2" UnSafe="False" WorkflowFileName="Init\Initialization.xaml">
         <ui:InvokeWorkflowFile.Arguments>
           <InOutArgument x:TypeArguments="scg:Dictionary(x:String, x:String)" x:Key="io_dicConfig">[dicConfig]</InOutArgument>
+          <InArgument x:TypeArguments="x:String" x:Key="in_ConfigPath">[strConfigPath]</InArgument>
         </ui:InvokeWorkflowFile.Arguments>
       </ui:InvokeWorkflowFile>
     </Sequence>

@@ -102,7 +102,7 @@
       <AssemblyReference>System.Data.SqlClient</AssemblyReference>
     </sco:Collection>
   </TextExpression.ReferencesForImplementation>
-  <Sequence DisplayName="TestCase_Init" sap:VirtualizedContainerService.HintSize="895.4285714285714,921.1428571428571" sap2010:WorkflowViewState.IdRef="Sequence_1">
+  <Sequence DisplayName="TestCase_Init" sap:VirtualizedContainerService.HintSize="751.4285714285714,921.1428571428571" sap2010:WorkflowViewState.IdRef="Sequence_1">
     <Sequence.Variables>
       <Variable x:TypeArguments="scg:Dictionary(x:String, x:String)" Default="[new Dictionary(Of String, String)]" Name="dicActualConfig" />
       <Variable x:TypeArguments="sd:DataTable" Name="dtTestData" />
@@ -141,6 +141,7 @@
               <ui:InvokeWorkflowFile ArgumentsVariable="{x:Null}" ContinueOnError="{x:Null}" DisplayName="Initialization - Invoke Workflow File (Init\Initialization.xaml)" sap:VirtualizedContainerService.HintSize="381.7142857142857,169.71428571428572" sap2010:WorkflowViewState.IdRef="InvokeWorkflowFile_1" UnSafe="False" WorkflowFileName="Init\Initialization.xaml">
                 <ui:InvokeWorkflowFile.Arguments>
                   <InOutArgument x:TypeArguments="scg:Dictionary(x:String, x:String)" x:Key="io_dicConfig">[dicActualConfig]</InOutArgument>
+                  <InArgument x:TypeArguments="x:String" x:Key="in_ConfigPath">ProjectData/config.xlsx</InArgument>
                 </ui:InvokeWorkflowFile.Arguments>
               </ui:InvokeWorkflowFile>
             </Sequence>
