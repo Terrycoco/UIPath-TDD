@@ -1,1 +1,1 @@
-{"Workflows":[{"FilePath":"Main.xaml","Activities":[]},{"FilePath":"Init/Initialization.xaml","Activities":[]},{"FilePath":"Init/TestCase_Init.xaml","Activities":[]}]}
+{"Workflows":[{"FilePath":"Main.xaml","Activities":[]},{"FilePath":"Init/Initialization.xaml","Activities":[]},{"FilePath":"Init/TestCase_Init.xaml","Activities":[]},{"FilePath":"ExampleWorkflow/ExampleWorkflow.xaml","Activities":[]}]}

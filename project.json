@@ -45,7 +45,6 @@
       {
         "editingStatus": "InProgress",
         "testCaseId": "160be046-371d-4869-9188-7101a7f67956",
-        "dataVariationFilePath": ".variations\\testData_Sheet1.json",
         "testCaseType": "TestCase",
         "executionTemplateInvokeIsolated": false,
         "fileName": "Init\\TestCase_Init.xaml"
