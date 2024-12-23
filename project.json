@@ -12,7 +12,7 @@
   "entitiesStores": [],
   "schemaVersion": "4.0",
   "studioVersion": "25.0.157.0",
-  "projectVersion": "1.0.0",
+  "projectVersion": "1.0.1",
   "runtimeOptions": {
     "autoDispose": false,
     "netFrameworkLazyLoading": false,
@@ -62,7 +62,10 @@
     }
   ],
   "isTemplate": true,
-  "templateProjectData": {},
+  "templateProjectData": {
+    "defaultProjectDescription": "Template for building a Test-Driven Development process",
+    "defaultProjectName": "Test Driven Development Template"
+  },
   "publishData": {},
   "targetFramework": "Windows"
 }
